@@ -1,4 +1,6 @@
 Nombre Del Proyecto: Ahorrando Ando.
 By: The Naughty Guys.
 App que busca, revisa, compara y avisa sobre descuentos, ofertas y bajadas de precios.
-Valor: Ahorro al usuario
+Valor: Experiencia de usuario/ Garantia de conseguir el mejor precio del mercado
+Público objetivo: Millenials (25-40) que buscan ventajas competitivas en los precios de los articulos en sitios online y offline.
+Smart Consumers.
