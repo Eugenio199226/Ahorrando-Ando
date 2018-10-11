@@ -1,2 +1,4 @@
 Nombre Del Proyecto: Ahorrando Ando.
 By: The Naughty Guys.
+App que busca, revisa, compara y avisa sobre descuentos, ofertas y bajadas de precios.
+Valor: Ahorro al usuario
