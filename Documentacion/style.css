@@ -1,0 +1,15 @@
+body {
+    font-family: verdana,geneva,tahoma, sans-serif
+    font-size: 12px;
+    padding:0;
+    margin:0;
+    }
+    section > div > img{width: 20%; height: 100px; display: block}
+    header>div{height 100px; background: white; display: block;}
+    header>nav{height: 100px;background: white; display: block;}
+    header>nav{height: 100px;background: white; display: block;}
+
+    
+    section> div{border: 2px solid blue; display: inline-block; height:100 px;}
+    
+    
