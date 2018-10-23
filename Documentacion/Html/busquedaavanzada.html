@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Búsqueda avanzada</title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="homecss.css">
+    <link rel="stylesheet" href="./homecss.css">
+    <link rel="stylesheet" href="./busqueda.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -24,9 +33,24 @@
         " - $" + $( "#slider-range" ).slider( "values", 1 ) );
     } );
     </script>
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Busqueda avanzada</a></li>
+                        </ul>
+                    </div>
+                </div>
+    </nav>
         <h1>Búsqueda avanzada</h1>
         <form method="POST" action="listadodeproductos.html">
         <div>
@@ -37,7 +61,7 @@
 
         <div>
                 <label for="categoria" id="categoria">Categoría:</label>
-                <select name="categoria" id="categoria" non-required>
+                <select name="categoria" id="categoria" required="required">
                     <option value="0" disable selected>Elige categoría</option>
                     <option value="1" >Ocio y tiempo libre</option>
                     <option value="2" >Viajes</option>

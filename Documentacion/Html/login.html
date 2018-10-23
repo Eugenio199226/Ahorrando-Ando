@@ -8,30 +8,59 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="homecss.css">
+    <link rel="stylesheet" href="./homecss.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-    <div class="container">
-  
-        <div class="row" id="pwd-container">
-        <div class="col-md-4"></div>
-                  
-        <div class="col-md-4">
-        <section class="login-form">
-            <form method="post" action="#" role="login">
-                <label> Usuario:</label>
-                <input type="email" name="email" placeholder="Introduce tu E-mail " required class="form-control input-lg" />
-                    
-                <label>Contraseña:</label>
-                <input type="password" class="form-control input-lg" id="password" placeholder="Introduce tu Contraseña" required="" />
-                        
-                <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Inicia sesión</button>
-                
-                <div><a href="#">Crear una cuenta</a> o <a href="#">¿Has olvidado tu contraseña?</a></div>
-                        
-            </form>
+    <!--Barra con menu desplegable-->
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Busqueda avanzada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Barra con menu desplegable FIN-->
+    </body>
+        <div class="container">
+      
+            <div class="row" id="pwd-container">
+            <div class="col-md-4"></div>
                       
-        </section>  
-    
-             
-</body>
+            <div class="col-md-4">
+            <section class="login">
+                <form method="post" action="#" role="login">
+                <div>
+                    <label for="email"> Usuario:</label>
+                    <input type="email"  id="email" placeholder="Introduce tu E-mail "/>
+                </div>    
+                <div>   
+                    <label for="password" >Contraseña:</label>
+                    <input type="password"  id="password" placeholder="Introduce tu Contraseña" required="" />
+                </div>               
+                    <button type="submit" name="go" >Inicia sesión</button>
+                    
+                    <div id="a"><a href="#">Crear una cuenta</a> o <a href="#">¿Has olvidado tu contraseña?</a></div>
+                            
+                </form>
+                          
+            </section>  
+        
+                 
+    </body>
 </html>
