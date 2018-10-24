@@ -1,0 +1,46 @@
+h2
+{
+    font-size: 5em;
+}
+ul{list-style:none}
+section>div{ 
+    margin-top: 20px;
+}
+li>div>div
+{
+    width: 50%;
+}
+
+.contenedores
+{
+    text-align: center;
+}
+#imgdetalle
+{
+    width: 50%;
+}
+.precio
+{
+    font-size: 3em;
+}
+
+    button
+    {
+        border-radius: 15px;
+        background-color:rgb(200, 255, 180);
+        color:rgb(0,110,0);
+        border-color: rgb(0,110,0)
+    }
+    .botonCompra{
+        border-radius: 15px;
+        background-color:rgb(200, 255, 180);
+        color:rgb(0,110,0);
+        border-color: rgb(0,110,0);
+        border: 2px solid  rgb(0,110,0); display: inline-block;
+    }
+    a:hover{
+        text-decoration:none;}
+.logoTienda
+{
+    width: 20px;
+}

@@ -9,50 +9,80 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="homecss.css">
+    <link rel="stylesheet" href="style-productoDetallado.css">
     <title>Producto Detallado</title>
 </head>
 <body>
-        <header class="row">
-                <div class="col-12 col-sm-12 col-lg-12 col-md-12">
-                        <nav class="navbar navbar-inverse">
-                                <div class="container-fluid">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                            <span class="glyphicon glyphicon-menu-hamburger"></span>                        
-                                        </button>
-                                        <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
-                                    </div>
-                                    <div class="collapse navbar-collapse" id="myNavbar">
-                                        <ul class="nav navbar-nav navbar-right">
-                                                <li><a href="#">Login</a></li>
-                                                <li><a href="#">Busqueda avanzada</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                </div>
+        <header>
+                <!--Barra con menu desplegable-->
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="./Html/login.html">Login</a></li>
+                                <li><a href="./Html/Registro.html">Búsqueda
+                                        Avanzada</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--Barra con menu desplegable FIN-->
             </header>
-    <section>
-        <div class="col-12 col-sm-12 col-ms-6 col-lg-6">
-            <img src="./img/interrogation.jpg">
+    <section class="row">
+        <!--Caja de la imagen del producto-->
+        <div class="col-12 col-sm-12 col-ms-6 col-lg-6 contenedores">
+            <img  id="imgdetalle" src="./img/tvsony.jpg">
         </div>
         <div class="col-12 col-sm-12 col-ms-6 col-lg-6">
-            <h2>Producto</h2>
+            <div class="contenedores">
+            <h2>Sony KD65XF7004</h2>
+            </div>
+            
+            <Button type="button" data-toggle="collapse" data-target="#collapseCaracteristicas">Caracteristicas</button>
+            <div class="collapse" id="collapseCaracteristicas">
+                <p>Alto rango dinámico 4K
+                        4K X-Reality PRO
+                        USB HDD
+                        Youtube, Netflix y mucho más
+                        ClearAudio+</p>
+            </div>
+            
             <ul>
-                <li>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Precio</div>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Icono</div>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Enlace</div>
+                <li class="row">
+                    <div class="col-12 col-sm-12 col-ms-2 col-lg-2">
+                        <div class="precio">1.028,49€</div>
+                        <div>+9,00 envio</div>
+                    </div>
+                    <div iclass="col-2 col-sm-2 col-ms-6 col-lg-6"><img class="logoTienda" src="img/amazon.png"></div>
+                    <div class="col-2 col-sm-2 col-ms-4 col-lg-4">
+                            <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>
+                    </div>
                 </li>
-                <li>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Precio</div>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Icono</div>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Enlace</div>
+                <li class="row">
+                    <div class="col-12 col-sm-12 col-ms-2 col-lg-2">
+                        <div class="precio">Precio</div>
+                        <div>Gastos de envio</div>
+                    </div>
+                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2"><img class="logoTienda" src="img/amazon.png"></div>
+                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2">
+                        <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>
+                    </div>
                 </li>
-                <li>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Precio</div>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Icono</div>
-                    <div class="col-4 col-sm-4 col-ms-4 col-lg-4">Enlace</div>
+                <li class="row">
+                    <div class="col-12 col-sm-12 col-ms-2 col-lg-2">
+                            <div class="precio">Precio</div>
+                            <div>Gastos de envio</div>
+                    </div>
+                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2"><img class="logoTienda" src="img/amazon.png"></div>
+                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2">
+                            <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>    
+                    </div>
                 </li>
             </ul>
         </div>
