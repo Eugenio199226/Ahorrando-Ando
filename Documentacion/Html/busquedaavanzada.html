@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Búsqueda avanzada</title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="homecss.css">
+    <link rel="stylesheet" href="./homecss.css">
+    <link rel="stylesheet" href="./busqueda.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 1,
+        max: 5000,
+        values: [ 50, 200 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+      });
+      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    } );
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Busqueda avanzada</a></li>
+                        </ul>
+                    </div>
+                </div>
+    </nav>
+        <h1>Búsqueda avanzada</h1>
+        <form method="POST" action="listadodeproductos.html">
+        <div>
+            <label for="palabraclave">Palabra clave:</label>
+            <input type="text" minlength="3" name="palabraclave" id="palabraclave" placeholder="Introduce tu búsqueda" 
+            required="required" pattern="[a-zA-Z ]*">
+        </div>
+
+        <div>
+                <label for="categoria" id="categoria">Categoría:</label>
+                <select name="categoria" id="categoria" required="required">
+                    <option value="0" selected disabled>Elige categoría</option>
+                    <option value="1" >Ocio y tiempo libre</option>
+                    <option value="2" >Viajes</option>
+                    <option value="3">Tecnología</option>
+                    <option value="4" >Librería</option>
+                    <option value="5" >Compras generales</option>         
+                </select>
+        </div>
+        
+        <div>
+            <label for="marca">Marca:</label>
+            <input type="text" minlength="3" name="marca" id="marca" placeholder="Opcional" 
+            pattern="[a-zA-Z ]*">
+        </div>
+
+        <div>	
+            <p>
+                <label for="precio" id="precio">Precio:</label>
+                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            </p>
+ 
+            <div id="slider-range"></div>
+        </div>
+
+        <div>
+            <label for="ordenar" id="ordenar">Ordenar por:</label>
+            <select name="ordenar" id="ordenar" required="required" value="Popularidad">
+                <option value="0" selected disabled>Elige categoría</option>
+                <option value="1" >Precio ascendente</option>
+                <option value="2" >Precio descendente</option>
+                <option value="3">Popularidad</option>
+                <option value="4" >Segunda mano primero</option>
+                <option value="5" >Pequeño comercio primero</option>         
+            </select>
+    </div>
+
+        <div>
+                <input type="checkbox" name="subastas" id="subastas" value="subastas" > <label for="subastas" >Segunda Mano</label>   
+        </div>
+
+        <div>
+                <input type="checkbox" name="vales" id="vales" value="vales" > <label for="vales" >Vales de descuentos</label>   
+        </div>
+    
+        <div>
+            <button>BUSCAR</button>
+        </div>
+        </form>
+    
+</body>
+</html>
