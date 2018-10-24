@@ -27,8 +27,9 @@ body{
   background-color: rgba(236, 255, 250, 50);
   background-image: url("Fondo.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   font-family: 'Fjalla One', sans-serif;
+  background-position: center
 }
 
 form{
