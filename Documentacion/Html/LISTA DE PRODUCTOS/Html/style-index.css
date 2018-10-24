@@ -1,0 +1,24 @@
+Section{
+text-align: center;
+}
+button
+{
+    border-radius: 15px;
+    background-color:rgb(200, 255, 180);
+    color:rgb(0,110,0);
+    border-color: rgb(0,110,0)
+}
+input
+{
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(228, 236, 234);
+    border-color:  rgb(203, 211, 209);
+    background-image: url("./img/lupa.png");
+    background-size:  15px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 25px;
+    opacity: 0.5;
+
+}
