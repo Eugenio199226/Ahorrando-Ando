@@ -33,7 +33,14 @@ Section{
     header>nav{height: 100px; display: block;}
     header>nav{height: 100px; display: block;}
     
+li div:nth-child(2) a { background: rgb(204,255,205);
+    color: rgb(0,110,0);
+    border: 1px solid green;
+}
+input[type=checkbox], input[type=radio] {
+    height: auto;
+}
 
-    
-    section> div{border: 2px solid blue; display: inline-block; height:100 px;}
+h4{color: peru; font-weight:bold}
+
     
