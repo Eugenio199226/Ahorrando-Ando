@@ -24,9 +24,17 @@
                             <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                                <div class="form-group">
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="Busqueda">
+                                    </div>
+                                </div>
+                                <button type="submit">Buscar</button>
+                            </form>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="./Html/login.html">Login</a></li>
-                                <li><a href="./Html/Registro.html">Búsqueda
+                                <li><a href="./login.html">Login</a></li>
+                                <li><a href="./busquedaavanzada.html">Búsqueda
                                         Avanzada</a></li>
                             </ul>
                         </div>
@@ -52,35 +60,50 @@
                         Youtube, Netflix y mucho más
                         ClearAudio+</p>
             </div>
-            
+            <Button type="button" data-toggle="collapse" data-target="#collapseDiagrama">
+                Diagrama de precios</button>
+                <div class="collapse" id="collapseDiagrama">
+                        <img src="img/line-graph.gif">
+                </div>
             <ul>
                 <li class="row">
-                    <div class="col-12 col-sm-12 col-ms-2 col-lg-2">
+
+                    <div class="col-12 col-sm-12 col-ms-4 col-lg-4">
                         <div class="precio">1.028,49€</div>
                         <div>+9,00 envio</div>
                     </div>
-                    <div iclass="col-2 col-sm-2 col-ms-6 col-lg-6"><img class="logoTienda" src="img/amazon.png"></div>
+
+                    <div class="col-2 col-sm-2 col-ms-4 col-lg-4"><img class="logoTienda" src="img/amazon.png"></div>
+
                     <div class="col-2 col-sm-2 col-ms-4 col-lg-4">
-                            <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-12 col-sm-12 col-ms-2 col-lg-2">
-                        <div class="precio">Precio</div>
-                        <div>Gastos de envio</div>
-                    </div>
-                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2"><img class="logoTienda" src="img/amazon.png"></div>
-                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2">
                         <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>
                     </div>
+
                 </li>
                 <li class="row">
-                    <div class="col-12 col-sm-12 col-ms-2 col-lg-2">
-                            <div class="precio">Precio</div>
-                            <div>Gastos de envio</div>
+
+                    <div class="col-12 col-sm-12 col-ms-4 col-lg-4 icono">
+                            <div class="precio">1.000,49€</div>
+                            <div>+12,00 envio</div>
                     </div>
-                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2"><img class="logoTienda" src="img/amazon.png"></div>
-                    <div class="col-2 col-sm-2 col-ms-2 col-lg-2">
+
+                    <div class="col-2 col-sm-2 col-ms-4 col-lg-4 "><img class="logoTienda" src="img/ebay.png"></div>
+
+                    <div class="col-2 col-sm-2 col-ms-4 col-lg-4">
+                        <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>
+                    </div>
+
+                </li>
+                <li class="row">
+
+                    <div class="col-12 col-sm-12 col-ms-4 col-lg-4">
+                        <div class="precio">1.048,49€</div>
+                        <div>+6,00 envio</div>
+                    </div>
+
+                    <div class="col-2 col-sm-2 col-ms-4 col-lg-4"><img class="logoTienda" src="img/Corte_Ingles.png"></div>
+
+                    <div class="col-2 col-sm-2 col-ms-4 col-lg-4">
                             <a class="botonCompra" href="https://amzn.to/2D0pycu">Comprar</a>    
                     </div>
                 </li>
