@@ -8,6 +8,7 @@
         mensaje('#listaNotas');      
     });
 });*/
+let listaProducto=[{imagen:1,elemento:2,detalle:3,precio:4},{imagen:"./imgs/nevirpccomponentes.jpg",elemento:2,detalle:3,precio:4}];
 var htmlProductos="";
 function addProducto(id,listaProducto)
 {
