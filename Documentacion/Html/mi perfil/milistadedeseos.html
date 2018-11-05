@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="homecss.css">     
+    <link rel="stylesheet" href="milistadedeseos.css">                               
     <title>Mi Lista de Deseos</title>
-
-    <div>
-        <label for="ordenar" id="ordenar">Ordenar por:</label>
-        <select name="ordenar" id="ordenar" required="required" value="Popularidad">
-            <option value="0" selected disabled>Elige categoría</option>
-            <option value="1" >Precio ascendente</option>
-            <option value="2" >Precio descendente</option>
-            <option value="3">Popularidad</option>
-            <option value="4" >Segunda mano primero</option>
-            <option value="5" >Pequeño comercio primero</option>  
-    <ul>
-        <li>Prod</li>
-    </ul>
 </head>
 <body>
-    
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="./Index.html"><img src="Logobitmap4.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <form method="POST" class="navbar-form navbar-left" action="./listadeproductos.html">
+                        <link rel="stylesheet" href="milistadedeseos.css">
+                        <label for="ordenar" id="ordenar">Ordenar por:</label>
+                        <select name="ordenar" id="ordenar" required="required" value="Popularidad">
+                            <option value="0" selected disabled>Elige categoría</option>
+                            <option value="1">Precio ascendente</option>
+                            <option value="2">Precio descendente</option>
+                            <option value="3">Popularidad</option>
+                            <option value="4">Segunda mano primero</option>
+                            <option value="5">Pequeño comercio primero</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </nav>
+            <ul>
+            <title>Mi Lista de Deseos</title>
+                <h1>Productos<h1>
+                        <ul>
+                            <li class="list-group-item">
+
+                                <div><img src="./img/camiseta.jpg" alt=""></div>
+
+                                <div><a href="./https://bit.ly/2PIi9Er" class="list-group-item list-group-item-action">Levi´s
+                                        Tshirt</a></div>
+                                <div>
+                                    <h2>Precio:24€</h2>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+
+                                <div><img src="./img/vestido.jpg" alt=""></div>
+
+                                <div><a href="./https://bit.ly/2CZDimV" class="list-group-item list-group-item-action">Vestido</a></div>
+                                <div>
+                                    <h3>Precio:52€</h3>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                    <div><img src="./img/libro.jpg" alt="imagen" width="200" height="120" alt=""></div>
+                                        <div><a href="./https://bit.ly/2CZDimV" class="">Libro</a></h3>
+                                        </div>
+                                </li>
+                        </ul>
 </body>
-<script src="./jquery-3.3.1.min.js"></script>
-<script src="./basededatos.js"></script>
+
 </html>
