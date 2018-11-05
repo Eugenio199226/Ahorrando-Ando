@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="homecss.css">
 <link rel="stylesheet" href="stylelistadeproducto.css">
 
-<body>
+<body onload="cargar()">
     <header>
         <!--Barra con menu desplegable-->
         <nav class="navbar navbar-inverse">
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <ul class="list-group">
+        <ul class="list-group" id="contenedorLista">
             <!-- Nuevo bloque-->
             <li class="list-group-item">
                 
@@ -82,6 +82,7 @@
                 </div>
                 
             </li>
+  
             <!--FIN Nuevo bloque-->
 
             <li class="list-group-item">
@@ -160,5 +161,5 @@
         </ul>
     </section>
 </body>
-
+ <script src="./scriptListadoProducto.js"></script>
 </html>
