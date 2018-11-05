@@ -95,3 +95,8 @@ label{
   display: inline-block;
   width: 80px;
 }
+.error
+{
+    color:red;
+}
+.esconder{display: none;}
