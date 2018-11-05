@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //let formValid = document.getElementById('busqueda').checkValidity();
 
 (function() {
@@ -99,3 +100,27 @@ let formValid = document.getElementById('busqueda').checkValidity();
     }
 >>>>>>> f4ac34a7b1113a2c8ce983a5027f68615ffdeb1a
 >>>>>>> de4b58ca46a68596a8e58d23d4dfe4f7265f209e
+=======
+let formValid = document.getElementById('busqueda').checkValidity();
+
+    if (formValid) {
+        //ENVIAR
+        $.ajax({
+            method: "POST",
+            url: "http://www.mocky.io/v2/5be0315632000071006494d9",//caso true
+            //url: "http://www.mocky.io/v2/5bd9777d2f0000790006d14c",//caso false
+            data: {
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value
+            }
+        }).done(function (data) {
+            console.log(data);
+            if (data.result) {
+                window.location.href = 'dashboard.html';
+            } else {
+                //mensaje de error
+                document.getElementById('mensaje').classList.remove('esconder');
+            }
+        });
+    }
+>>>>>>> ca19fe2f8d68353b374bfefd4a4cac4dc8159765
