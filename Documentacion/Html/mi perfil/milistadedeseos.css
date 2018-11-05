@@ -1,0 +1,117 @@
+.navbar-inverse{
+    background-color: rgb(204, 255, 205);
+}
+.navbar{
+    color: black;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: rgb(0, 110, 0);
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: rgb(0, 0, 0);
+}
+.icon-bar{
+  color: rgb(0, 110, 0);
+  background-color: rgb(0, 110, 0);
+}
+.navbar-toggle{
+  color: rgb(0, 110, 0);
+  border: 0px;      
+}
+.navbar-toggle:hover{
+  color: rgb(0, 110, 0);
+  border: 0px;        
+}
+body{
+  background-color: rgba(236, 255, 250, 50);
+  background-image: url("Fondo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Fjalla One', sans-serif;
+  background-position: center
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 20px;
+    color: rgb(0, 110, 0);
+    border-color: rgb(0, 110, 0);
+    border: 3px solid rgb(0, 110, 0);
+    background-color: rgb(204, 255, 205);
+    padding: 5px;
+}
+
+.form-control{
+    border: 2px solid rgb(0, 110, 0);
+    border-radius: 20px;
+}
+.busquedainicio{
+  padding-top: 50px;
+}
+
+.listado{
+  padding-top: 5px;
+}
+.col-sm-4{
+  margin: auto;
+  width: 50%;
+}
+
+.container{
+  border: 2px green solid;
+  padding: 5px;
+  background-color:  rgb(226, 250, 227);
+}
+
+:placeholder-shown{
+  text-align: center;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 25px;
+  background: rgb(251, 255, 0);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+label{
+  display: inline-block;
+  width: 80px;
+}
+.error
+{
+    color:red;
+}
+.esconder{display: none;}
+
+body{text-align: center}
+form {margin: 0 auto; width: 50%;}
+label{display: inline-block;width: 80px;}
