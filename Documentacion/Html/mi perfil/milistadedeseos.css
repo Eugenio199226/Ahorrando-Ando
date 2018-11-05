@@ -116,5 +116,14 @@ label{
 }
 .esconder{display: none;}
 
-.corazon{
+.corazon{color: red;
+    border: 0px solid ;
+    background-color:white;
+    padding: 5px;}
+
+.corazon.rosa{color:palevioletred;
+    background-color:white;
+}
+
+
 }}

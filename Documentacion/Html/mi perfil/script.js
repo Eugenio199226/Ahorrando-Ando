@@ -1,4 +1,5 @@
-var corazon = document.getElementsByClassName("corazon")
+var corazon = document.getElementById("corazon");
 
-function submitButtonStyle(corazon) { 
-    document.getElementsByClassName("corazon").style.backgroundColor = "red"; }
+corazon.onclick = function () {
+    this.classList.add('rosa');
+}
