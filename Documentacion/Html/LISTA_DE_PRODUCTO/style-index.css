@@ -1,0 +1,30 @@
+Section{
+text-align: center;
+}
+#buscar
+{
+    height: 70px;
+    border-radius: 30px;
+    background-color:rgb(200, 255, 180);
+    color:rgb(0,110,0);
+    border: solid 1px rgb(0,110,0);
+    font-size: 50px;
+    margin-top: 15px;
+
+}
+input
+{
+    height: 50px;
+    width: 45%;
+    border-radius: 25px;
+    background-color: rgb(228, 236, 234);
+    border-color:  rgb(203, 211, 209);
+    background-image: url("./img/lupa.png");
+    background-size:  25px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 25px;
+    opacity: 0.5;
+
+}
+a:hover{text-decoration:none;}
