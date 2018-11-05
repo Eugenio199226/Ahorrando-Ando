@@ -18,21 +18,6 @@
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-        $( function() {
-        $( "#slider-range" ).slider({
-            range: true,
-            min: 1,
-            max: 5000,
-            values: [ 50, 200 ],
-            slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-            }
-        });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-        } );
-        </script>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -45,14 +30,6 @@
                 </div>
                 
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <form class="navbar-form navbar-left" action="./listadeproductos.html">
-                        <div class="form-group">
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" placeholder="Busqueda">
-                            </div>
-                        </div>
-                        <button type="submit">Buscar</button>
-                    </form>
                     <ul class="nav navbar-nav navbar-right">
                             <li><a href="./login.html">Login</a></li>
                             <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
@@ -61,13 +38,15 @@
             </div>
         </nav>
             <h1>Búsqueda avanzada</h1>
-        <form method="POST" action="./listadeproductos.html" class="form-horizontal">
+        <form method="POST" action="./listadeproductos.html" class="form-horizontal" id="loginForm">
                 <div class="form-group">
+                    <div class="error" id="errorglobal">Usuario y contraseña no validos</div>
                     <label class="control-label col-sm-2" for="palabraclave">Palabra clave:</label>
                     <div class="col-sm-8">
                         <input class="form-control" type="text" minlength="3" name="palabraclave" id="palabraclave" 
                         required>
                     </div>
+                    <div class="error" id="errorPalabra">Rellene el campo</div>
                 </div>
 
                 <div class="form-group">
@@ -124,10 +103,8 @@
                 </div>
             </div>
        
-            <div>
-                <button>BUSCAR</button>
-            </div>
+                <button type="submit" name="btnBA" id="buscarAvanzado">BUSCAR</button>
         </form>
-        
     </body>
+    <script src="./scriptBusquedaAvanzada.js"></script>
 </html>

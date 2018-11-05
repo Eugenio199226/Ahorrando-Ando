@@ -35,10 +35,12 @@
         </header>
             <!-- Cuerpo del index-->
         <div class="center-block">
-            <form method="get" action="./listadeproductos.html"> 
+            <form method="get" action="./listadeproductos.html" id="busqueda"> 
                 <div align="center">
                     <label class="placeholder" for=""></label>
-                    <input class="form-control input-lg" type="Text" name="buscador" placeholder="Empieza a ahorrar">
+                    <input class="form-control input-lg" type="Text" name="buscador" placeholder="Empieza a ahorrar" id="barra" minlength="3">
+                </div>
+                <div id="errorbarra" class="error esconder">Rellena el campo</div>
                 </div>
                 <p class="busquedainicio"></p>
                 <div align="center">
@@ -48,5 +50,7 @@
         </div>
 
     </body>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./indexscript.js"></script>
 
 </html>

@@ -1,0 +1,46 @@
+Section{
+    text-align: center;
+    }
+    button
+    {
+        border-radius: 15px;
+        background-color:rgb(200, 255, 180);
+        color:rgb(0,110,0);
+        border-color: rgb(0,110,0)
+    }
+    input
+    {
+        height: 30px;
+        border-radius: 15px;
+        background-color: rgb(228, 236, 234);
+        border-color:  rgb(203, 211, 209);
+        background-image: url("./img/lupa.png");
+        background-size:  15px;
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding-left: 25px;
+        opacity: 0.5;
+    }
+    section >ul> li> div> img{
+        width: 20%;
+        height: 100px;
+        padding: 10px;
+      }
+    
+     
+    section > div > img{width: 20%; height: 100px; display: block}
+    header>div{height: 100px; display: block;}
+    header>nav{height: 100px; display: block;}
+    header>nav{height: 100px; display: block;}
+    
+li div:nth-child(2) a { background: rgb(204,255,205);
+    color: rgb(0,110,0);
+    border: 1px solid green;
+}
+input[type=checkbox], input[type=radio] {
+    height: auto;
+}
+
+h4{color: peru; font-weight:bold}
+
+    
