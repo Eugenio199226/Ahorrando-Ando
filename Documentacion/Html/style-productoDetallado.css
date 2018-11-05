@@ -21,10 +21,7 @@ a:hover{
 section>div{ 
     margin-top: 20px;
 }
-li>div>div
-{
-    width: 50%;
-}
+
 
 .contenedores
 {
@@ -36,7 +33,7 @@ li>div>div
 }
 .precio
 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .logoTienda
@@ -44,4 +41,8 @@ li>div>div
     width: 50px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+section{
+    text-align: center;
 }

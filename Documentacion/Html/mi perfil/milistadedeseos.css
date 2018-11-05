@@ -1,3 +1,7 @@
+body{text-align: center}
+form {margin: 0 auto; width: 50%;}
+label{display: inline-block;width: 80px;}
+
 .navbar-inverse{
     background-color: rgb(204, 255, 205);
 }
@@ -112,6 +116,9 @@ label{
 }
 .esconder{display: none;}
 
-body{text-align: center}
-form {margin: 0 auto; width: 50%;}
-label{display: inline-block;width: 80px;}
+.corazon{
+    color: red;
+    border: 0px solid ;
+    background-color:white;
+    padding: 5px;
+}}
