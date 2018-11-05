@@ -16,6 +16,7 @@
   background-color: rgb(0, 110, 0);
 }
 .navbar-toggle{
+  display: block;
   color: rgb(0, 110, 0);
   border: 0px;      
 }
