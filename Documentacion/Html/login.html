@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>login</title>
+    <title>Registro</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -14,50 +14,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="homecss.css">
-    
+    <link rel="stylesheet" href="./homecss.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-    <!--Barra con menu desplegable-->
-    <header>
+   <!--Barra con menu desplegable-->
+   <header>
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="./Index.html"><img src="Logobitmap4.png" alt=""></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <form method="POST" class="navbar-form navbar-left" action="./listadeproductos.html">
-                        <div class="form-group">
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" placeholder="Busqueda">
-                            </div>
-                        </div>
-                        <button type="submit">Buscar</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-        <!--Barra con menu desplegable FIN-->
-<<<<<<< HEAD
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
+                </ul>
+            </li>
+       </ul> 
+    </div>
+    </nav>
+</header>
+<!--Barra con menu desplegable FIN-->
     </body>
-=======
-
->>>>>>> 45768a898a67209c527ef3df504bb1b6491b11f4
-        <div class="container login">
+        <div class="container">
       
             <div class="row" id="pwd-container">
             <div class="col-md-4"></div>
                       
             <div class="col-md-4">
             <section class="login">
-                <form method="post" action="./perfilusuario.html" role="login" id="loginForm" novalidate>
+                <form method="post" action="#" role="login" id="loginForm" novalidate>
                 <div class="error" id="errorglobal">Usuario y contraseña no validos</div>
                 <div class="form-group">
                     <label for="email"> Usuario:</label>
