@@ -1,5 +1,1 @@
-var corazon = document.getElementById("btncorazon");
-
-corazon.onclick = function () {
-    document.getElementById("corazon").classList.add('rosa');
-}
+    document.querySelectorAll('.glyphicon.glyphicon-heart').forEach(elem => {elem.onclick=function(){this.style.color='green'}});

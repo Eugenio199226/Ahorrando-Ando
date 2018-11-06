@@ -24,12 +24,12 @@ document.getElementById('registrarseBtn').onclick = (function (registrarse) {
         }).done(function (data) {
             console.log(data);
             if (data.result) {
-                window.location.href = 'dashboard.html';
+                window.location.href = './perfilusuario.html';
             } else {
                 //mensaje de error
                 document.getElementById('mensaje').classList.remove('esconder');
             }
-        }).error(function(error){
+        }).fail(function(error){
             console.log("Error:",error);
         });
 
