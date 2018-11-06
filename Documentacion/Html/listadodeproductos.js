@@ -2,7 +2,7 @@
 document.body.onload= function(){
     //Conexion con ajax json
     $.ajax({
-        url:"http://www.mocky.io/v2/5be16e253000004b00d9a982"
+        url:"http://www.mocky.io/v2/5be1a65b3000006000d9ab0d"
     }).done(function (listaProducto)
     {
         addProducto("#contenedorLista",listaProducto)
@@ -25,7 +25,7 @@ function addProducto(id,listaProducto)
              htmlProductos +=`
             <li class="list-group-item">
                 
-                <div class="container">
+                <div class="container productos">
 
                     <div class="col-sm-5"><img class="img-thumbnail" src="${productos.imagen}" width="200" height="120" alt=""></div>
                         
@@ -35,6 +35,13 @@ function addProducto(id,listaProducto)
                         <p class="listado">${productos.especificaciones}</p>
                         
                         <h4>${productos.precio}</h4>
+                        <div>
+                            <p>
+                            <button type="button" class="corazon">
+                              <span id="corazon"class="glyphicon glyphicon-heart">  </span>  
+                            </button>
+                          </p>
+                        </div>
                     </div>
                                
                 </div>
@@ -58,3 +65,9 @@ function productoDetalle(id)
 
     });
 }
+
+/*var corazon = document.getElementById("btncorazon");
+
+corazon.onclick = function () {
+    document.getElementById("corazon").classList.add('rosa');
+}*/

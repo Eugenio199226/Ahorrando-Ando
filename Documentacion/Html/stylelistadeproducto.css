@@ -43,4 +43,13 @@ input[type=checkbox], input[type=radio] {
 
 h4{color: rgb(145, 104, 0); font-weight:bold}
 
+
+.corazon{color: red;
+    border: 0px solid ;
+    background-color:white;
+    padding: 5px;}
+
+.rosa{color:palevioletred;
+    background-color:white;}
+
     
