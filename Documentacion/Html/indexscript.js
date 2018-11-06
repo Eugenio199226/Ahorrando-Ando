@@ -18,7 +18,7 @@ document.getElementById('buscar').onclick = (function (buscar) {
         }).done(function (data) {
             console.log(data);
             if (data.result) {
-                window.location.href = 'dashboard.html';
+                window.location.href = 'listadeproductos.html';
             }
         });
 
