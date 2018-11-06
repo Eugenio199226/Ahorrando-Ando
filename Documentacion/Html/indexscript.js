@@ -32,20 +32,18 @@ document.getElementById('buscar').onclick = (function (buscar) {
 });
 
 
-//document.getElementById('barra').onkeyup = (function (complementar) {
-//  $.ajax({
-//    url: "http://www.mocky.io/v2/5be073e23200008300649672" ,
-//  }).done(function (basededatos) {
-//    console.log(basededatos);
-//INYECTAR basededatos en el html
-// generarHtml('#barra', basededatos);
-//  document.getElementById('sugerencia').innerHTML=`<li><a href="#">xxx</a></li>`;
-// });
+document.getElementById('barra').onkeyup = (function (complementar) {
+    $.ajax({
+        url: "http://www.mocky.io/v2/5be16e253000004b00d9a982",
+    }).done(function (basededatos) {
+        autocomplete(document.getElementById("barra"), basededatos);
+        
+    });
 
-//});
+});
 
 
-var televisiones = [{producto:"Sony"}, {producto:"DIA"}, {producto:"MADRID"}, {producto:"HELLIN"}];
+
 
 function autocomplete(inp, arr) {
 
@@ -65,7 +63,7 @@ function autocomplete(inp, arr) {
         this.parentNode.appendChild(a);
 
         for (i = 0; i < arr.length; i++) {
-            let texto=arr[i].producto;
+            let texto = arr[i].producto;
 
             if (texto.substr(0, val.length).toUpperCase() == val.toUpperCase()) {
 
@@ -129,5 +127,5 @@ function autocomplete(inp, arr) {
     });
 }
 
-autocomplete(document.getElementById("barra"), televisiones);
+
 
