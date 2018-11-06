@@ -18,32 +18,26 @@
     <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-    <!--Barra con menu desplegable-->
+   <!--Barra con menu desplegable-->
+   <header>
     <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="./Index.html"><img src="Logobitmap4.png" alt=""></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <form method="POST" class="navbar-form navbar-left" action="./listadeproductos.html">
-                        <div class="form-group">
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" placeholder="Busqueda">
-                            </div>
-                        </div>
-                        <button type="submit">Buscar</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--Barra con menu desplegable FIN-->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
+                </ul>
+            </li>
+       </ul> 
+    </div>
+    </nav>
+</header>
+<!--Barra con menu desplegable FIN-->
     </body>
         <div class="container">
       

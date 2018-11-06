@@ -13,27 +13,26 @@
 
 </head>
 <body>
-        <header class="row">
-                <div class="col-12 col-sm-12 col-lg-12 col-md-12">
-                        <nav class="navbar navbar-inverse">
-                                <div class="container-fluid">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                            <span class="glyphicon glyphicon-menu-hamburger"></span>                        
-                                        </button>
-                                        <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
-                                    </div>
-                                    <div class="collapse navbar-collapse" id="myNavbar">
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li><a href="./login.html">Login</a></li>
-                                            <li><a href="./busquedaavanzada.html">Búsqueda
-                                                    Avanzada</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                </div>
-            </header>
+         <!--Barra con menu desplegable-->
+    <header>
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
+                    </ul>
+                </li>
+           </ul> 
+        </div>
+        </nav>
+    </header>
+    <!--Barra con menu desplegable FIN-->
 
             <h1 align="center">MIS CUPONES</h1>
             <p align="center">Introduce el número del cupon que aparece en el email recibido.</p>

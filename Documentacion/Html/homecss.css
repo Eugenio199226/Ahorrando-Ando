@@ -23,6 +23,11 @@
   color: rgb(0, 110, 0);
   border: 0px;        
 }
+
+.navbar-nav > li > .dropdown-menu{
+  background-color: rgb(204, 255, 205);
+}
+
 body{
   background-color: rgba(236, 255, 250, 50);
   background-image: url("Fondo.png");
@@ -63,7 +68,11 @@ button{
   width: 50%;
 }
 
-.container{
+
+.login{
+}
+
+.productos{
   border: 2px green solid;
   padding: 5px;
   background-color:  rgb(226, 250, 227);
