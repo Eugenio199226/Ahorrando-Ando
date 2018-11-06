@@ -63,7 +63,11 @@ button{
   width: 50%;
 }
 
-.container{
+
+.login{
+}
+
+.productos{
   border: 2px green solid;
   padding: 5px;
   background-color:  rgb(226, 250, 227);
