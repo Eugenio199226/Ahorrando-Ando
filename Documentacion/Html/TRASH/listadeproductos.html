@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="homecss.css">
+<link rel="stylesheet" href="stylelistadeproducto.css">
+
+<body>
+    <header>
+        <!--Barra con menu desplegable-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="Logobitmap4.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./Html/login.html">Login</a></li>
+                        <li><a href="./Html/Registro.html">Búsqueda
+                                Avanzada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Barra con menu desplegable FIN-->
+    </header>
+    <section>
+        <h1>TELEVISIONES</h1> 
+        <div>
+            <label for="ordenar" id="ordenar">Ordenar por:</label>
+            <select name="ordenar" id="ordenar" required="required" value="Popularidad">
+                <option value="0" selected disabled>Elige categoría</option>
+                <option value="1" >Precio ascendente</option>
+                <option value="2" >Precio descendente</option>
+                <option value="3">Popularidad</option>
+                <option value="4" >Segunda mano primero</option>
+                <option value="5" >Pequeño comercio primero</option>         
+            </select>
+        </div>
+        
+        <div> 
+        <input type="checkbox" name="envio" id="envio" value="envio" ><label for="envio" >Gastos de envío incluido</label>
+        </div>
+        
+
+        <ul class="list-group">
+        
+            <li class="list-group-item">
+                    
+                <div><img src="imgs/TELEVISIONSAMSUNG.jpg" alt=""></div> 
+                    
+                <div><a href="./ProductoDetallado.html" class="list-group-item action" >Samsung UE40MU6405U</a></div>
+                    
+                <div>Samsung UE40MU6405U - Smart TV de 40" (UHD 4K, HDR, 3840 x 2160, Wi-Fi), color plateado [Clase de eficiencia energética A+]<h4>Precio:498,98€-1.599€</h4>
+                    <div><a href="./https://bit.ly/2CZDimV" class="list-group-item list-group-item-action"></a> <p>
+                        <button type="button" class="corazon">
+                          <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                        </button>
+                      </p></div>
+                </div>
+                
+            </li>
+
+            <li class="list-group-item">
+
+                   <div><img src="imgs/tvsony.jpg" alt=""></div>
+                    
+                   <div><a href="./ProductoDetallado.html" class="list-group-item list-group-item-action" >Sony KD65XF7004</a></div> 
+
+                    <div>Sony KD65XF7004Alto rango dinámico 4K 4K X-Reality PR USB HDD Youtube, Netflix y mucho más ClearAudio+  <h4>Precio:498,98€-1.599€</h4></div>
+                    <div><a href="./https://bit.ly/2CZDimV" class="list-group-item list-group-item-action"></a> <p>
+                        <button type="button" class="corazon">
+                          <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                        </button>
+                      </p></div>
+                    </div>
+            </li>
+
+            <li class="list-group-item"> 
+                
+                <div><img src="imgs/tvlgci.jpg" alt=""></div>
+
+                <div><a href="./ProductoDetallado.html" class="list-group-item list-group-item-action">LG 65SK7900PLA</a></div>
+
+                <div>LG TV LED 164 cm (65") LG 65SK7900PLA SuperUHD 4K con NanoCells <h4>Precio:1.199€-1.599€</h4>
+                    <div><a href="./https://bit.ly/2CZDimV" class="list-group-item list-group-item-action"></a> <p>
+                        <button type="button" class="corazon">
+                          <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                        </button>
+                      </p></div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                
+                <div><img src="imgs/tvsegundamano.jpg"alt=""></div>
+        
+                <div><a href="./ProductoDetallado.html" class="list-group-item list-group-item-action">Segunda Mano</a></div>
+
+                <div>Televisión Samsung 40 pulgadas Estado: Segunda Mano <h4>Precio: 160€-500€</h4></div>
+                <div><a href="./https://bit.ly/2CZDimV" class="list-group-item list-group-item-action"></a> <p>
+                    <button type="button" class="corazon">
+                      <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                    </button>
+                  </p></div>
+                </div>
+
+            </li>
+
+            <li class="list-group-item">
+                
+                <div><img src="imgs/philipscarrefour.jpg"alt=""></div>
+                
+                <div> <a href="./ProductoDetallado.html"class="list-group-item list-group-item-action">Philips 43PUS6503/12</a></div>
+
+                <div>TV LED 109,22 cm (43") Philips 43PUS6503/12, UHD 4K, Smart TV <h4>Precio: 371,10€-995,93€</h4> </div>
+                <button type="button" class="corazon">
+                    <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                  </button>
+                </p></div>
+            </div>
+            </li>
+
+            <li class="list-group-item">
+               
+                <div><img src="imgs/toshibacashconverters.jpg" alt=""></div>
+
+                <div><a href="./ProductoDetallado.html"class="list-group-item list-group-item-action">Toshiba 32w3753dg</a></div> 
+        
+                
+                <div>Televisor Led Toshiba 32w3753dg <h4>Precio:181,50€-591,33€</h4></div>
+                <button type="button" class="corazon">
+                    <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                  </button>
+                </p></div>
+            </div>
+                
+
+            </li>
+
+            <li class="list-group-item">
+                
+                <div><img src="imgs/nevirpccomponentes.jpg" alt=""></div>
+
+                <div><a href="./ProductoDetallado.html" class="list-group-item list-group-item-action">Nevir NVR-7802-55FHD-2W-N 55</a></div> 
+
+                <div>Nevir NVR-7802-55FHD-2W-N 55" LED Full HD <h4>Precio:389€-429€</h4></div>
+                <button type="button" class="corazon">
+                    <span id="corazon"class="glyphicon glyphicon-heart"></span>  
+                  </button>
+                </p></div>
+            </div>
+            </li>
+
+
+        </ul>
+    </section>
+</body>
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="./listaproducto.js"></script>
+</html>

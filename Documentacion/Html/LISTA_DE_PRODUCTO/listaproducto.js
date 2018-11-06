@@ -31,7 +31,8 @@ function addProducto(id,listaProducto)
                     <div class="col-sm-5">
                         <div><h3><a href="./ProductoDetallado.html" class="" >${productos.producto}</a></h3></div>
                             
-                        <p class="listado">${productos.especificaciones}</p>
+                        <p class="listado">${productos.especificaciones} class="" >${productos.corazon}</p>
+
                         
                         <h4>${productos.precio}</h4>
                     </div>
