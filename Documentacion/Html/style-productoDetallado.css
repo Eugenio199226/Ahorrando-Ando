@@ -3,7 +3,10 @@ h2
     font-size: 5em;
 }
 ul{list-style:none}
-
+table
+{
+    text-align: center;
+}
 .botonCompra{
     text-align: center;
     font-size:2em;

@@ -1,28 +1,40 @@
 //Se llama al body
-document.body.onload= function(){
+document.body.onload = function () {
     //Conexion con ajax json
     $.ajax({
-        url:"http://www.mocky.io/v2/5be1a65b3000006000d9ab0d"
-    }).done(function (listaProducto)
-    {
-        addProducto("#contenedorLista",listaProducto)
-        productoDetalle("#contenedorLista")
-    }).fail(function(error){
-        console.log("Error:",error)
+        url: "http://www.mocky.io/v2/5be1a65b3000006000d9ab0d"
+    }).done(function (listaProducto) {
+        addProducto("#contenedorLista", listaProducto);
+        productoDetalle("#contenedorLista");
+        //cambio color like
+        document.querySelectorAll('.glyphicon.glyphicon-heart').forEach(elem => { elem.onclick = function () 
+            {   
+                let color= this.style.color;
+                if (color=="red")
+                {
+                    this.style.color = 'green'
+                }
+                else
+                {
+                    this.style.color = 'red'
+                }       
+                 
+            } 
+        });
+    }).fail(function (error) {
+        console.log("Error:", error)
     });
-    
+
 }
 //Se añade el producto
-function addProducto(id,listaProducto)
-{
-    $(id).html(function()
-        {
+function addProducto(id, listaProducto) {
+    $(id).html(function () {
 
-            let htmlProductos=""
-            
-          listaProducto.forEach(productos => {
-              //carga el html
-             htmlProductos +=`
+        let htmlProductos = ""
+
+        listaProducto.forEach(productos => {
+            //carga el html
+            htmlProductos += `
             <li class="list-group-item">
                 
                 <div class="container productos">
@@ -47,27 +59,21 @@ function addProducto(id,listaProducto)
                 </div>
                 
             </li>
-            `   
-              
-          });
-           
+            `
+
+        });
+
 
         $(id).append(htmlProductos);
-        });
+    });
 }
-function productoDetalle(id)
-{
-    $(id+" .vinculoDetalle").click(function()
-    {
-        localStorage.setItem("imagen",$(this).attr('data-img'));
-        localStorage.setItem("producto",$(this).attr('data-prod'));
-        localStorage.setItem("caracteristicas",$(this).attr('data-espec'));
+function productoDetalle(id) {
+    $(id + " .vinculoDetalle").click(function () {
+        localStorage.setItem("imagen", $(this).attr('data-img'));
+        localStorage.setItem("producto", $(this).attr('data-prod'));
+        localStorage.setItem("caracteristicas", $(this).attr('data-espec'));
 
     });
 }
 
-/*var corazon = document.getElementById("btncorazon");
 
-corazon.onclick = function () {
-    document.getElementById("corazon").classList.add('rosa');
-}*/
