@@ -23,7 +23,7 @@ document.querySelectorAll('.error').forEach(elem=>
             console.log(msg);
             if(msg.result)
             {
-                window.location.href="index.html"
+                window.location.href="./perfilusuario.html"
             }else
             {
                 document.getElementById("errorglobal").classList.remove('esconder'); 
