@@ -47,3 +47,8 @@ function addProducto(id,listaProducto)
         $(id).append(htmlProductos);
         });
 }
+var corazon = document.getElementById("btncorazon");
+
+corazon.onclick = function () {
+    document.getElementById("corazon").classList.add('rosa');
+}

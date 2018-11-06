@@ -1,5 +1,5 @@
-var corazon = document.getElementById("corazon");
+var corazon = document.getElementById("btncorazon");
 
 corazon.onclick = function () {
-    this.classList.add('rosa');
+    document.getElementById("corazon").classList.add('rosa');
 }
