@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="homecss.css">
+    <link rel="stylesheet" href="./homecss.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+   <!--Barra con menu desplegable-->
+   <header>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Index.html"><img src="Logobitmap4.png" alt=""></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
+                </ul>
+            </li>
+       </ul> 
+    </div>
+    </nav>
+</header>
+<!--Barra con menu desplegable FIN-->
+    </body>
+        <div class="container">
+      
+            <div class="row" id="pwd-container">
+            <div class="col-md-4"></div>
+                      
+            <div class="col-md-4">
+            <section class="login">
+                <form method="post" action="#" role="login" id="loginForm" novalidate>
+                <div class="error" id="errorglobal">Usuario y contraseña no validos</div>
+                <div class="form-group">
+                    <label for="email"> Usuario:</label>
+                    <input class="form-control" type="email"  id="email" placeholder="Introduce tu E-mail " required/>
+                    <div class="error" id="emailError">Introduzca un email valido</div>
+                </div>    
+                <div class="form-group">   
+                    <label for="password" >Contraseña:</label>
+                    <input class="form-control" type="password"  id="password" placeholder="Introduce tu Contraseña" required/>
+                    <div class="error" id="passError">Completa la contraseña</div>
+                </div>               
+                    <button type="submit" name="go" id="loginButton">INICIA SESIÓN</button>
+                    
+                    <div id="a"><a href="./registro.html">Crear una cuenta</a> o <a href="./registro.html">¿Has olvidado tu contraseña?</a></div>
+                            
+                </form>
+                          
+            </section>  
+    </body>
+    <script src="./script_login.js"></script>
+</html>

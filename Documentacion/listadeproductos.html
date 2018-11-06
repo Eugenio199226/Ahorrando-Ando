@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="homecss.css">
+<link rel="stylesheet" href="stylelistadeproducto.css">
+
+<body>
+    <header>
+        <!--Barra con menu desplegable-->
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="./Index.html"><img src="Logobitmap4.png" alt=""></a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./login.html">Login</a></li>
+                                <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
+                            </ul>
+                        </li>
+                   </ul> 
+                </div>
+                </nav>
+        <!--Barra con menu desplegable FIN-->
+    </header>
+    <section>
+        <h1>TELEVISIONES</h1>
+        <div>
+            <div class="col-md-5">
+                <label for="ordenar" id="ordenar">Ordenar por:</label>
+                <select name="ordenar" id="ordenar" required="required" value="Popularidad">
+                    <option value="0" selected disabled>Elige categoría</option>
+                    <option value="1">Precio ascendente</option>
+                    <option value="2">Precio descendente</option>
+                    <option value="3">Popularidad</option>
+                    <option value="4">Segunda mano primero</option>
+                    <option value="5">Pequeño comercio primero</option>
+                </select>
+            </div>
+            <p></p>
+            <div class="col-md-5">
+                <input type="checkbox" name="envio" id="envio" value="envio"><label for="envio">Gastos de envío
+                    incluidos</label>
+            </div>
+        </div>
+
+        <table class="list-group" id="contenedorLista">
+            <!-- Nuevo bloque
+            <li class="list-group-item">
+                
+                <div class="container productos">
+
+                    <div class="col-sm-5"><img class="img-thumbnail" src="imgs/TELEVISIONSAMSUNG.jpg" width="200" height="120" alt=""></div>
+                        
+                    <div class="col-sm-5">
+                        <div><h3><a href="./ProductoDetallado.html" class="" >Samsung UE40MU6405U</a></h3></div>
+                            
+                        <p class="listado">Smart TV de 40" (UHD 4K, HDR, 3840 x 2160, Wi-Fi), color plateado [Clase de eficiencia energética A+]</p>
+                        
+                        <h4>498,98€-1.599€</h4>
+                        <div>
+                            <p>
+                            <button type="button" class="corazon">
+                              <span id="corazon"class="glyphicon glyphicon-heart">  </span>  
+                            </button>
+                          </p>
+                        </div>
+                    </div>
+                               
+                </div>
+                
+            </li>-->
+
+            <!--FIN Nuevo bloque-->
+
+
+        </table>
+    </section>
+</body>
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="./listadodeproductos.js"></script>
+
+</html>
+</body>
+
+</html>
