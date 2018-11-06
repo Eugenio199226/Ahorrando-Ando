@@ -2,7 +2,7 @@
 document.body.onload= function(){
     //Conexion con ajax json
     $.ajax({
-        url:"http://www.mocky.io/v2/5be073e23200008300649672"
+        url:"http://www.mocky.io/v2/5be16e253000004b00d9a982"
     }).done(function (listaProducto)
     {
         addProducto("#contenedorLista",listaProducto)
@@ -26,14 +26,14 @@ function addProducto(id,listaProducto)
                 
                 <div class="container">
 
-                    <div class="col-sm-5"><img class="img-thumbnail" src="./img/nevirpccomponentes.jpg" width="200" height="120" alt=""></div>
+                    <div class="col-sm-5"><img class="img-thumbnail" src="${productos.imagen}" width="200" height="120" alt=""></div>
                         
                     <div class="col-sm-5">
-                        <div><h3><a href="./ProductoDetallado.html" class="" >${productos.Producto}</a></h3></div>
+                        <div><h3><a href="./ProductoDetallado.html" class="" >${productos.producto}</a></h3></div>
                             
-                        <p class="listado">${productos.Especificaciones}</p>
+                        <p class="listado">${productos.especificaciones}</p>
                         
-                        <h4>${productos.Precio}</h4>
+                        <h4>${productos.precio}</h4>
                     </div>
                                
                 </div>
