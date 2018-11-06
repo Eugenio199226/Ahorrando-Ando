@@ -6,6 +6,7 @@ document.body.onload= function(){
     }).done(function (listaProducto)
     {
         addProducto("#contenedorLista",listaProducto)
+        productoDetalle("#contenedorLista")
     }).fail(function(error){
         console.log("Error:",error)
     });
@@ -29,7 +30,7 @@ function addProducto(id,listaProducto)
                     <div class="col-sm-5"><img class="img-thumbnail" src="${productos.imagen}" width="200" height="120" alt=""></div>
                         
                     <div class="col-sm-5">
-                        <div><h3><a href="./ProductoDetallado.html" class="" >${productos.producto}</a></h3></div>
+                        <div><h3><a href="./ProductoDetallado.html" class="vinculoDetalle" data-img="${productos.imagen}" data-prod="${productos.producto}" data-espec="${productos.especificaciones}" >${productos.producto}</a></h3></div>
                             
                         <p class="listado">${productos.especificaciones}</p>
                         
@@ -46,4 +47,14 @@ function addProducto(id,listaProducto)
 
         $(id).append(htmlProductos);
         });
+}
+function productoDetalle(id)
+{
+    $(id+" .vinculoDetalle").click(function()
+    {
+        localStorage.setItem("imagen",$(this).attr('data-img'));
+        localStorage.setItem("producto",$(this).attr('data-prod'));
+        localStorage.setItem("caracteristicas",$(this).attr('data-espec'));
+
+    });
 }
