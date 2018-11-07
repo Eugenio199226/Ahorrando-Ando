@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Búsqueda avanzada</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="homecss.css">
+        <link rel="stylesheet" href="./homecss.css">
+        <link rel="stylesheet" href="./busqueda.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="Index.html"><img src="Logobitmap4.png" alt=""></a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="./busquedaavanzada.html">Busqueda avanzada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <h1>Búsqueda avanzada</h1>
+        <form method="POST" action="./listadeproductos.html" class="form-horizontal" id="loginForm">
+                <div class="form-group">
+                    <div class="error" id="errorglobal">Usuario y contraseña no validos</div>
+                    <label class="control-label col-sm-2" for="palabraclave">Palabra clave:</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" minlength="3" name="palabraclave" id="palabraclave" 
+                        required>
+                    </div>
+                    <div class="error" id="errorPalabra">Rellene el campo</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="categoria" id="categoria">Categoría:</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" name="categoria" id="categoria" non-required>
+                                <option value="0" disable selected>Elige categoría</option>
+                                <option value="1" >Ocio y tiempo libre</option>
+                                <option value="2" >Viajes</option>
+                                <option value="3">Tecnología</option>
+                                <option value="4" >Librería</option>
+                                <option value="5" >Compras generales</option>       
+                            </select>
+                        </div>
+                    </div>
+            
+                <div class="form-group">
+                        <label class="control-label col-sm-2" for="palabraclave">Marca</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" minlength="3" name="palabraclave" id="palabraclave" placeholder="Opcional" >
+                        </div>
+                    </div>
+
+            <div class="form-group">	
+                    <label class="control-label col-sm-2" for="precio" id="precio">Precio:</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" id="amount">
+                    </div>
+                    <div class="col-sm-10" style="padding:10px">
+                        <div class="col-sm-10" id="slider-range"></div>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                    <label class="control-label col-sm-2" for="categoria" id="categoria">Ordenar por:</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" name="categoria" id="categoria" non-required>
+                                    <option value="0" selected disabled>Elige categoría</option>
+                                    <option value="1">Precio ascendente</option>
+                                    <option value="2">Precio descendente</option>
+                                    <option value="3">Popularidad</option>
+                                    <option value="4">Segunda mano primero</option>
+                                    <option value="5">Pequeño comercio primero</option>       
+                            </select>
+                        </div>
+            </div>
+
+            <div class="form-group"> 
+                <div class="col-sm-10">
+                    <div class="checkbox">
+                    <label class="col-sm-6"><input type="checkbox">Segunda mano</label>
+                    <label class="col-sm-6"><input type="checkbox">Vales de descuento</label>
+                    </div>
+                </div>
+            </div>
+       
+                <button type="submit" name="btnBA" id="buscarAvanzado">BUSCAR</button>
+        </form>
+    </body>
+    <script src="./scriptBusquedaAvanzada.js"></script>
+</html>
